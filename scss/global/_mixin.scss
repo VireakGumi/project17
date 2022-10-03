@@ -1,0 +1,71 @@
+
+@mixin body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // height: 200vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: #5588A6;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+@mixin form {
+    font-family: sans-serif;
+    font-size: 10px;
+    width: 100%;
+    margin: 10px;
+    color: black;
+}
+@mixin contact {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+@mixin input {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px ;
+}
+@mixin  image{
+    position: relative;
+    filter: blur(2px);
+}
+@mixin text{
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    color: rgb(59, 59, 59);
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 0px 20px 20px 20px;
+    border-radius: 20px;
+    width: 45%;
+}
+// @mixin suggestion {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 30px;
+    
+// }
+// @mixin card{
+//     display: flex;
+//     flex-direction: column;
+//     margin: 40px 15px 40px 40px;
+//     background-color: white;
+
+// }
+
+@mixin flex {
+    display: flex;
+}
+@mixin a {
+    display: flex;
+}
+@mixin login {
+    display: flex;
+    background-color: #353a3e;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

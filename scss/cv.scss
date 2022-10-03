@@ -1,0 +1,106 @@
+@import 'global/mixin';
+@import 'global/button';
+@import 'global/@media';
+@import 'global/responsive';
+
+body {
+    @include body;
+    background-color: #353a3e;
+}
+form {
+    font-family: sans-serif;
+    background-color: white;
+    width: 50%;
+    padding: 50px;
+    border-radius: 30px;
+}
+h1 {
+    font-family: sans-serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    .form-name {
+        @include form;
+        display: flex;
+        width: 100%;
+        .name{
+            flex: 1;
+            width: 100%;
+        }
+        .last{
+            margin-left: 10px;
+        }
+        label{
+            font-size: 18px;
+        }
+        input{
+        @include input;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 7px;
+        }
+        .sex{
+            display: flex;
+            flex-direction: column;
+            select{
+                @include input;
+                border: 2px solid rgba(0, 0, 0, 0.874);
+                padding: 8px;
+            }
+        }
+        @include responsiveSize(small){
+            .last{
+                margin-left: 0;
+                margin-top: 10px;
+                margin-bottom: -5px
+            }
+        }
+    }
+.form-main {
+    @include form;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-size: 18px;
+    }
+    input{
+        @include input;
+        padding: 8px;
+    }
+}
+.nex {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    button {
+        // padding: 12px 35px;
+        padding: 8px 25px;
+        margin: 0;
+        margin-top: 30px;
+        &:hover {
+            color: white;
+            background-color: #f9b745;
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+        }
+    }
+    @include responsiveSize (small) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: small;
+}
+}
+.pncstudent {
+    color: white;
+    }
+}
+@media(max-width: 800px) {
+    .form-name{
+        display: flex;
+        flex-direction: column;
+    }
+}

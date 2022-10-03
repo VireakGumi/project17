@@ -1,0 +1,256 @@
+button, .list-card .card a {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #F9B745;
+  margin: 0px 5px;
+  font-size: medium;
+}
+button a, .list-card .card a a {
+  text-decoration: none;
+  color: black !important;
+}
+button:hover, .list-card .card a:hover {
+  background-color: #F9B745;
+  color: white;
+}
+button:hover a, .list-card .card a:hover a {
+  color: white !important;
+  border: none !important;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #353a3e;
+}
+
+.main img {
+  position: relative;
+  filter: blur(2px);
+  right: 0;
+}
+.main .text {
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  color: rgb(59, 59, 59);
+  background-color: rgba(255, 255, 255, 0.582);
+  padding: 0px 20px 20px 20px;
+  border-radius: 20px;
+  width: 45%;
+  color: #353a3e;
+}
+.main .text h1 {
+  font-size: 35px;
+}
+
+.research {
+  display: flex;
+  align-items: flex-end;
+  margin: 15px 35px;
+  width: 100%;
+}
+.research input {
+  width: 40%;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid black;
+  border: 2px solid white;
+  outline-color: #f9b745;
+}
+.research button, .research .list-card .card a, .list-card .card .research a {
+  width: 7%;
+  padding: 7px;
+  background: #f9b745;
+  color: white;
+}
+.research button:hover, .research .list-card .card a:hover, .list-card .card .research a:hover {
+  background-color: #353a3e;
+}
+@media (max-width: 1000px) {
+  .research input {
+    padding: 6px;
+  }
+  .research button, .research .list-card .card a, .list-card .card .research a {
+    width: 10%;
+  }
+}
+@media (max-width: 777px) {
+  .research button, .research .list-card .card a, .list-card .card .research a {
+    width: 20% !important;
+  }
+}
+
+.suggestion {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px -10px;
+  width: 100%;
+}
+.suggestion button, .suggestion .list-card .card a, .list-card .card .suggestion a {
+  padding: 2px 10px;
+  background-color: #353a3e;
+  color: white;
+}
+.suggestion button:hover, .suggestion .list-card .card a:hover, .list-card .card .suggestion a:hover {
+  background-color: #f9b745;
+}
+
+.list-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.list-card .card {
+  background-color: rgba(235, 235, 235, 0.77);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  color: #353a3e;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 16% !important;
+  margin: 15px;
+}
+.list-card .card p,
+.list-card .card h4 {
+  margin: 10px 5px;
+}
+.list-card .card p span,
+.list-card .card h4 span {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.list-card .card img {
+  border-radius: 10px;
+}
+.list-card .card .bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-card .card:hover {
+  transform: translate(-15px);
+  box-shadow: white 10px 0px 10px, white 0px 0px 5px;
+}
+.list-card .card a {
+  color: #353a3e;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Next-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  font-size: large;
+}
+.Next-page span {
+  color: white;
+}
+.Next-page a {
+  text-decoration: none;
+  color: rgba(249, 183, 69, 0.6784313725);
+  margin: 0px 10px;
+  color: rgba(249, 183, 69, 0.6784313725);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+.Next-page a:hover {
+  background-color: rgba(255, 255, 255, 0.274);
+}
+.Next-page .active {
+  color: #f9b745;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    font-size: smaller;
+  }
+  .container button, .container .list-card .card a, .list-card .card .container a {
+    padding: 5px;
+  }
+  .container .main img {
+    height: 500px;
+  }
+  .container .main .text {
+    width: 70%;
+    top: 25%;
+  }
+  .container .main .text h1 {
+    font-size: 30px;
+  }
+  .container .main .text p {
+    font-size: small;
+    margin: -10px 0px 10px 0px;
+  }
+  .container .main .text button, .container .main .text .list-card .card a, .list-card .card .container .main .text a {
+    padding: 7px;
+    margin: -5px;
+  }
+  .container .search-bar .type input {
+    padding: 5px !important;
+    width: 200px !important;
+  }
+  .container .suggestion {
+    flex-shrink: 2;
+    margin: 0px;
+  }
+  .container .suggestion button:nth-child(odd), .container .suggestion .list-card .card a:nth-child(odd), .list-card .card .container .suggestion a:nth-child(odd) {
+    display: none;
+  }
+  .container .list-card {
+    flex-wrap: wrap;
+  }
+  .container .list-card .card {
+    width: 215px !important;
+    margin: 10px;
+  }
+}
+@media (max-width: 777px) {
+  .container {
+    font-size: smaller;
+  }
+  .container button, .container .list-card .card a, .list-card .card .container a {
+    padding: 5px;
+  }
+  .container .mian .text {
+    width: 70%;
+    top: 18%;
+  }
+  .container .mian .text h1 {
+    font-size: 20px;
+  }
+  .container .mian .text p {
+    font-size: small;
+    margin: -10px 0px 10px 0px;
+  }
+  .container .mian .text button, .container .mian .text .list-card .card a, .list-card .card .container .mian .text a {
+    padding: 7px;
+    margin: -5px;
+  }
+  .container .list-card {
+    flex-wrap: wrap;
+  }
+  .container .list-card .card {
+    width: 170px !important;
+    margin-top: 30px;
+  }
+  .container .mission {
+    flex-direction: column;
+  }
+  .container .mission-left {
+    text-align: center;
+  }
+  .container .mission-right p,
+.container .mission-right .bottom {
+    width: 90%;
+  }
+}

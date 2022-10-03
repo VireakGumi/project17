@@ -1,0 +1,98 @@
+@import 'global/mixin';
+@import 'global/button';
+@import 'global/responsive';
+
+body {
+    @include body;
+    background-color: #353a3e;
+}
+form {
+    background-color: white;
+    width: 50%;
+    padding: 50px;
+    border-radius: 30px;
+    @include responsiveSize(small) {
+        h1{
+            font-size: 30px;
+        }
+        .form-main{
+            padding: 0;
+            margin: 0;
+            input{
+                padding: 7px;
+            }
+        }
+        button{
+            padding: 5px;
+            margin-top: 10px;
+        }
+        
+    }
+}
+
+h1 {
+    font-family: sans-serif;
+}
+.form-main {
+    @include form;
+    display: flex;
+    flex-direction: column;
+    input{
+        @include input;
+    }
+}
+
+.form-contact-date {
+    display: flex;
+    justify-content: space-between;
+    @include responsiveSize(small) {
+        flex-direction: column;
+        .contact{
+            margin: 0;
+            // margin-left: 10px;
+            width: 100%;
+            input{
+                padding: 7px;
+            }
+        }
+    }
+}
+
+.contact {
+    @include contact;
+    flex: 1;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    input{
+        @include input;
+        // width: 80%
+    }
+
+
+}
+
+.date {
+    @include contact;
+    margin-right: -10px;
+    // align-items: flex-start;
+    input{
+        @include input;
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    button {
+        @extend button;
+        // display: flex;
+        // margin-left: auto;
+        margin-right: -7px;
+
+    
+    }
+}
+.pncstudent {
+    color: white;
+}
+

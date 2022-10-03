@@ -1,0 +1,61 @@
+@import '_variable.scss';
+@import '_responsive.scss';
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    img , button{
+        margin: 0px 20px;
+    }
+    .nav-center{
+        a{
+            text-decoration: none;
+            color: $textnot;
+            margin: 0px 20px;
+            &:hover{
+                border-bottom: 5px solid white;
+                
+            }
+        }
+        .active{
+            color: #F9B745;
+        }
+    }
+    .nav-right{
+        a{
+            text-decoration: none;
+            color: $textnot;
+            margin: 0px 20px;
+            &:hover{
+                border-bottom: 5px solid white;
+            }
+        }
+    }
+    @include responsiveSize(small){
+        font-size: small;
+        img{
+            width: 100px;
+        }
+        .nav-center{
+            a{
+                margin: 0px 5px;
+            }
+        }
+        .nav-right{
+            a{
+                margin: 0px 0px;
+            }
+            button{
+                margin-left: 5px;
+                padding: 3px;
+                font-size: small;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,13 @@
+@use 'sass:map';
+@import '_variable.scss';
+$breakPoints: (
+    small: $mobile,
+    mediem: $teblet
+);
+
+@mixin responsiveSize($key) {
+    $size: map.get($breakPoints, $key);
+    @media(max-width:$size) {
+        @content;    
+    }
+}

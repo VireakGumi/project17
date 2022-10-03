@@ -1,0 +1,217 @@
+@charset "UTF-8";
+button, .container .rate .sub a, .container main .main-mid .mid-right .sub .apply, .container main .main-top .right a, .container main .main-top .left a {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #F9B745;
+  margin: 0px 5px;
+  font-size: medium;
+}
+button a, .container .rate .sub a a, .container main .main-mid .mid-right .sub .apply a, .container main .main-top .right a a, .container main .main-top .left a a {
+  text-decoration: none;
+  color: black !important;
+}
+button:hover, .container .rate .sub a:hover, .container main .main-mid .mid-right .sub .apply:hover, .container main .main-top .right a:hover, .container main .main-top .left a:hover {
+  background-color: #F9B745;
+  color: white;
+}
+button:hover a, .container .rate .sub a:hover a, .container main .main-mid .mid-right .sub .apply:hover a, .container main .main-top .right a:hover a, .container main .main-top .left a:hover a {
+  color: white !important;
+  border: none !important;
+}
+
+.container {
+  padding: 50px;
+}
+.container main {
+  width: 100%;
+}
+.container main p {
+  font-size: 20px;
+}
+.container main .main-top {
+  display: flex;
+  width: 100%;
+  margin: 40px 0px;
+}
+.container main .main-top .img {
+  display: flex;
+  flex: 1.2;
+}
+.container main .main-top .left {
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.container main .main-top .left h3 {
+  margin: -5px 0px 30px 0px;
+}
+.container main .main-top .left a {
+  padding: 3px;
+  text-decoration: none;
+  background-color: #353a3e;
+  color: white;
+}
+.container main .main-top .right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+.container main .main-top .right a {
+  width: 100%;
+  text-decoration: none;
+  background-color: #f9b745;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.container main .main-top .right a:hover {
+  background-color: #353a3e;
+}
+.container main .main-mid {
+  display: flex;
+}
+.container main .main-mid .mid-left {
+  flex: 3;
+  padding: 0px 50px;
+}
+.container main .main-mid .mid-left h1 {
+  display: flex;
+  flex-direction: column;
+}
+.container main .main-mid .mid-left h1 span {
+  color: #f9b745;
+}
+.container main .main-mid .mid-left p {
+  display: flex;
+  flex-direction: column;
+}
+.container main .main-mid .mid-left p span {
+  margin-top: 30px;
+}
+.container main .main-mid .mid-right {
+  flex: 1;
+  width: 100%;
+}
+.container main .main-mid .mid-right .sub {
+  text-align: center;
+  width: 90%;
+  background-color: rgba(136, 136, 136, 0.575);
+  border-radius: 20px;
+  padding: 10px;
+}
+.container main .main-mid .mid-right .sub .apply {
+  text-decoration: none;
+  width: 50%;
+  color: #353a3e;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.container main .main-bottom {
+  padding: 30px;
+}
+.container main .main-bottom li {
+  font-size: 20px;
+  list-style: none;
+  margin-top: 5px;
+}
+.container main .main-bottom li::before {
+  content: "•";
+  color: #f9b745;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+}
+.container main .main-bottom .header {
+  margin-top: 40px;
+}
+.container main .main-bottom .header h1 {
+  color: #f9b745;
+}
+.container main .main-bottom .map {
+  width: 100%;
+}
+.container main .main-bottom .map iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.container .rate {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.575);
+}
+.container .rate .sub {
+  width: 40%;
+  background-color: rgba(136, 136, 136, 0.575);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+.container .rate .sub a {
+  width: 20%;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #353a3e;
+  display: flex;
+  justify-content: center;
+}
+.container .rate .sub a:hover {
+  color: #353a3e;
+  color: white;
+}
+.container footer h2 {
+  color: #f9b745;
+}
+@media (max-width: 777px) {
+  .container {
+    padding: 30px 10px 0px 20px;
+  }
+}
+
+@media (max-width: 777px) {
+  main {
+    font-size: medium;
+  }
+  main p {
+    font-size: 15px !important;
+  }
+  main li {
+    font-size: 15px !important;
+  }
+  main h1 {
+    font-size: x-large;
+  }
+  main .main-top {
+    font-size: smaller;
+    flex-direction: column;
+  }
+  main .main-top .img {
+    margin-top: -30px;
+    margin-left: -40px;
+    width: 60%;
+  }
+  main .main-top .button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  main .main-mid {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  main .main-mid .mid-left {
+    padding: 0px 10px !important;
+  }
+  main .main-bottom {
+    padding: 10px !important;
+  }
+}

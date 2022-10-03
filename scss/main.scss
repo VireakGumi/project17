@@ -1,0 +1,12 @@
+@import 'global/nav';
+@import 'global/button';
+@import 'global/footer';
+@import 'global/variable';
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    color: white;
+    font-family: $font;
+}

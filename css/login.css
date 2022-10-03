@@ -1,0 +1,81 @@
+button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #F9B745;
+  margin: 0px 5px;
+  font-size: medium;
+}
+button a {
+  text-decoration: none;
+  color: black !important;
+}
+button:hover {
+  background-color: #F9B745;
+  color: white;
+}
+button:hover a {
+  color: white !important;
+  border: none !important;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  background-color: #5588A6;
+  font-family: sans-serif;
+  margin-top: 50px;
+  background-color: #353a3e;
+}
+body form {
+  background-color: white;
+  width: 50%;
+  padding: 50px;
+  border-radius: 30px;
+}
+body form h1 {
+  font-family: sans-serif;
+}
+body form .form-main {
+  font-family: sans-serif;
+  font-size: 10px;
+  width: 100%;
+  margin: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+body form .form-main label {
+  font-size: 18px;
+}
+body form .form-main input {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+body form .form-check {
+  display: flex;
+  justify-content: space-between;
+}
+body form .form-check .forget a {
+  text-decoration: none;
+  color: blue;
+}
+body form .submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body form .submit a {
+  text-decoration: none;
+  color: blue;
+  margin-top: 10px;
+}
+
+.pncstudent {
+  color: white;
+}
