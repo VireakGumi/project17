@@ -12,6 +12,7 @@ form {
     padding: 50px;
     border-radius: 30px;
     @include responsiveSize(small) {
+        font-size: smaller;
         h1{
             font-size: 30px;
         }
